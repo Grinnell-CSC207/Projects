@@ -34,6 +34,22 @@
             android:name="edu.grinnell.CSC207.F2013.activities.MeowingKitty"
             android:label="@string/title_activity_meowing_kitty" >
         </activity>
+        <activity
+            android:name="edu.grinnell.CSC207.F2013.activities.UshahidiIncident"
+            android:label="@string/title_activity_ushahidi_incident" >
+        </activity>
+        <activity
+            android:name="edu.grinnell.CSC207.F2013.activities.AllIncidentsArray"
+            android:label="@string/title_activity_all_incidents_array" >
+        </activity>
+        <activity
+            android:name="edu.grinnell.CSC207.F2013.projects.MainActivityBa"
+            android:label="@string/title_activity_main_activity_ba" >
+        </activity>
+        <activity
+            android:name="edu.grinnell.CSC207.F2013.activities.AllIncidentsList"
+            android:label="@string/title_activity_all_incidents_list" >
+        </activity>
     </application>
 
 </manifest>

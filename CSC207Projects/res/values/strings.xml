@@ -11,5 +11,11 @@
     <string name="my_projects_btn">Projects</string>
     <string name="title_activity_meowing_kitty">Meowing Kitty</string>
     <string name="click_me_btn">Click Me</string>
+    <string name="title_activity_ushahidi_incident">Ushahidi Incident</string>
+    <string name="incident_button">Incident</string>
+    <string name="title_activity_all_incidents_array">All Incidents Array</string>
+    <string name="title_activity_main_activity_ba">MainActivityBa</string>
+    <string name="title_activity_all_incidents_list">All Incidents (List)</string>
+    <string name="all_incidents_btn">All Incidents</string>
 
 </resources>

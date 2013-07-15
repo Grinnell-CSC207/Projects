@@ -43,7 +43,16 @@ public class Projects extends Activity {
 	
 	public void listProjects () 
 	{
-		String[] projects = {"Project 1", "Project 2", "Project 3"};
+		String[] projects = {
+				"Basics: Annoying Kitty", 					// 0
+				"Ushahidi: Display an Incident", 			// 1
+				"Ushahidi: Display All Incidents (Arrays)",	// 2
+				"Ushahidi: Select Incidents (Arrays)",		// 3
+				"Ushahidi: Sort Incidents (Arrays)",		// 4
+				"Ushahidi: Display All Incidents (Lists)",	// 5
+				"Ushahidi: Select Incidents (Lists)"		// 6
+		};
+
 		projectList = (ListView) findViewById(R.id.listView1);
 		
 		adapter = new ArrayAdapter<String>(this, R.layout.simple_row);
@@ -52,6 +61,9 @@ public class Projects extends Activity {
 		
 		// Create Intents to link to a specific project
 		final Intent meow = new Intent(this, MeowingKitty.class);
+		final Intent one_incident = new Intent(this, UshahidiIncident.class);
+		final Intent all_incidents_array = new Intent(this, AllIncidentsArray.class);
+		final Intent all_incidents_list = new Intent(this, AllIncidentsList.class);
 		
 		projectList.setOnItemClickListener(new OnItemClickListener() {
 			@Override
@@ -63,7 +75,13 @@ public class Projects extends Activity {
 						startActivity(meow);
 						break;
 					case 1:
-					//	call intents according to the list row's ID number
+						startActivity(one_incident);
+						break;
+					case 2:
+						startActivity(all_incidents_array);
+						break;
+					case 5:
+						startActivity(all_incidents_list);
 						break;
 					default:
 						break;
