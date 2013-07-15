@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Your Username</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_about_me">About Me</string>
+    <string name="title_activity_projects">Projects</string>
+    <string name="student_name">Your Name</string>
+    <string name="about_me_btn">About</string>
+    <string name="my_projects_btn">Projects</string>
+    <string name="title_activity_meowing_kitty">Meowing Kitty</string>
+    <string name="click_me_btn">Click Me</string>
+
+</resources>
