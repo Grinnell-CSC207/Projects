@@ -1,6 +1,13 @@
 package edu.grinnell.CSC207.F2013.activities;
 
+import edu.grinnell.CSC207.F2013.projects.AllIncidentsArray;
+import edu.grinnell.CSC207.F2013.projects.AllIncidentsList;
+import edu.grinnell.CSC207.F2013.projects.IncidentSort;
+import edu.grinnell.CSC207.F2013.projects.MeowingKitty;
 import edu.grinnell.CSC207.F2013.projects.R;
+import edu.grinnell.CSC207.F2013.projects.SelectIncidentsArray;
+import edu.grinnell.CSC207.F2013.projects.SelectIncidentsList;
+import edu.grinnell.CSC207.F2013.projects.UshahidiIncident;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
@@ -64,6 +71,9 @@ public class Projects extends Activity {
 		final Intent one_incident = new Intent(this, UshahidiIncident.class);
 		final Intent all_incidents_array = new Intent(this, AllIncidentsArray.class);
 		final Intent all_incidents_list = new Intent(this, AllIncidentsList.class);
+		final Intent select_incidents_array = new Intent(this, SelectIncidentsArray.class);
+		final Intent select_incidents_list = new Intent(this, SelectIncidentsList.class);
+		final Intent sort_incidents = new Intent(this, IncidentSort.class);
 		
 		projectList.setOnItemClickListener(new OnItemClickListener() {
 			@Override
@@ -80,8 +90,17 @@ public class Projects extends Activity {
 					case 2:
 						startActivity(all_incidents_array);
 						break;
+					case 3:
+						startActivity(select_incidents_array);
+						break;
+					case 4:
+						startActivity(sort_incidents);
+						break;
 					case 5:
 						startActivity(all_incidents_list);
+						break;
+					case 6:
+						startActivity(select_incidents_list);
 						break;
 					default:
 						break;

@@ -17,5 +17,26 @@
     <string name="title_activity_main_activity_ba">MainActivityBa</string>
     <string name="title_activity_all_incidents_list">All Incidents (List)</string>
     <string name="all_incidents_btn">All Incidents</string>
+    <string name="title_activity_select_incidents_array">Select Incidents Array</string>
+    <string name="title_activity_select_incidents_list">Select Incidents List</string>
+    <string name="find_btn">Find</string>
+    <string name="select_text">Search by incident ID:</string>
+    <string name="search_hint">enter search term</string>
+    <string name="display_all_btn">All Incidents</string>
+
+    <string-array name="search">
+        <item>Find ID</item>
+        <item>Find title</item>
+        <item>Find location</item>
+        <item>Find verified</item>
+    </string-array>
+    <string-array name="sort">
+        <item>ID</item>
+        <item>Title</item>
+        <item>Location</item>
+        <item>Categories</item>
+    </string-array>
+
+    <string name="title_activity_incident_sort">Incident Sort</string>
 
 </resources>

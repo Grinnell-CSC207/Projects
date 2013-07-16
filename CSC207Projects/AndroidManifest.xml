@@ -8,6 +8,9 @@
         android:minSdkVersion="11"
         android:targetSdkVersion="17" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -31,15 +34,15 @@
             android:label="@string/title_activity_projects" >
         </activity>
         <activity
-            android:name="edu.grinnell.CSC207.F2013.activities.MeowingKitty"
+            android:name="edu.grinnell.CSC207.F2013.projects.MeowingKitty"
             android:label="@string/title_activity_meowing_kitty" >
         </activity>
         <activity
-            android:name="edu.grinnell.CSC207.F2013.activities.UshahidiIncident"
+            android:name="edu.grinnell.CSC207.F2013.projects.UshahidiIncident"
             android:label="@string/title_activity_ushahidi_incident" >
         </activity>
         <activity
-            android:name="edu.grinnell.CSC207.F2013.activities.AllIncidentsArray"
+            android:name="edu.grinnell.CSC207.F2013.projects.AllIncidentsArray"
             android:label="@string/title_activity_all_incidents_array" >
         </activity>
         <activity
@@ -47,8 +50,20 @@
             android:label="@string/title_activity_main_activity_ba" >
         </activity>
         <activity
-            android:name="edu.grinnell.CSC207.F2013.activities.AllIncidentsList"
+            android:name="edu.grinnell.CSC207.F2013.projects.AllIncidentsList"
             android:label="@string/title_activity_all_incidents_list" >
+        </activity>
+        <activity
+            android:name="edu.grinnell.CSC207.F2013.projects.SelectIncidentsArray"
+            android:label="@string/title_activity_select_incidents_array" >
+        </activity>
+        <activity
+            android:name="edu.grinnell.CSC207.F2013.projects.SelectIncidentsList"
+            android:label="@string/title_activity_select_incidents_list" >
+        </activity>
+        <activity
+            android:name="edu.grinnell.CSC207.F2013.projects.IncidentSort"
+            android:label="@string/title_activity_incident_sort" >
         </activity>
     </application>
 
