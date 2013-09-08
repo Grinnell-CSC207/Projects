@@ -1,8 +1,10 @@
 package edu.grinnell.CSC207.F2013.projects;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import edu.grinnell.CSC207.F2013.activities.Projects;
+import edu.grinnell.CSC207.F2013.project_files.MyList;
 import edu.grinnell.CSC207.F2013.projects.R;
 import edu.grinnell.CSC207.F2013.projects.R.layout;
 import edu.grinnell.CSC207.F2013.projects.R.menu;
@@ -23,7 +25,7 @@ public class AllIncidentsArray extends Activity {
 
 	ListView listIncidents;
 	ArrayAdapter<Incident> adapter;
-	ArrayList<Incident> allIncidents;
+	List<Incident> allIncidents;
 	int dataSize = 0;
 	API greatLakes;
 	
@@ -61,7 +63,9 @@ public class AllIncidentsArray extends Activity {
 
 			greatLakes = new API("http://www.greatlakescommonsmap.org/");
 			dataSize = greatLakes.getIncidentsList().size();
-			allIncidents = greatLakes.getIncidentsList();
+            ArrayList<Incident> apiIncidents = greatLakes.getIncidentsList();
+            allIncidents = new MyList<Incident>();
+            allIncidents.addAll(apiIncidents);
 			adapter = new ArrayAdapter<Incident>(this, R.layout.simple_row, allIncidents);
 			listIncidents.setAdapter(adapter);
 
