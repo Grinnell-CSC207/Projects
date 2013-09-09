@@ -6,11 +6,11 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
 
-public class MyList<T> implements List<T> {
+public class List<T> implements java.util.List<T> {
 
-    List<T> proxy;
+    java.util.List<T> proxy;
 
-    public MyList() {
+    public List() {
         proxy = new ArrayList<T>();
     }
 
@@ -115,7 +115,7 @@ public class MyList<T> implements List<T> {
     }
 
     @Override
-    public List subList(int start, int end) {
+    public java.util.List subList(int start, int end) {
         return proxy.subList(start, end);
     }
 
